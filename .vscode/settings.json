@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
         "grpc",
-        "protobuf"
+        "mysvc",
+        "mysvccore"
     ]
 }

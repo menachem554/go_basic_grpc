@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package grpc;
+
+option go_package="github.com/menachem554/go_basic_grpc";
+
+service UserService {
+  rpc GetUsers (GetUsersRequest) returns (GetUsersResponse) {}
+}
+
+message User {
+  int64 id = 1;
+  string name = 2;
+}
+message GetUsersRequest {
+  repeated int64 ids = 1; 
+}
+  
+message GetUsersResponse {
+  repeated User users = 1; 
+}
